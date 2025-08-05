@@ -1,0 +1,23 @@
+{
+  "name": "chip-selector-import",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "serve public",
+    "build-tsc": "tsc",
+    "dev": "vite",
+    "vite-build": "vite build",
+    "vite-preview": "vite preview"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chip-selector": "1.0.49"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^7.0.4"
+  }
+}
