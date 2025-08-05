@@ -6,8 +6,10 @@
     "start": "serve public",
     "build-tsc": "tsc",
     "dev": "vite",
-    "vite-build": "vite build",
-    "vite-preview": "vite preview"
+    "dev:watch": "vite --watch",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "preview": "vite preview"
   },
   "main": "index.js",
   "author": "",
@@ -18,6 +20,6 @@
   "devDependencies": {
     "serve": "^14.2.0",
     "typescript": "^5.4.5",
-    "vite": "^7.0.4"
+    "vite": "^6.3.5"
   }
 }
