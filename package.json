@@ -6,10 +6,14 @@
     "start": "serve public",
     "build-tsc": "tsc",
     "dev": "vite",
+    "dev:demo": "vite --port 5174",
     "dev:watch": "vite --watch",
     "build": "vite build",
     "build:watch": "vite build --watch",
-    "preview": "vite preview"
+    "build:demo": "vite build --config vite.config.js",
+    "build:demo:watch": "vite build --watch --config vite.config.js",
+    "preview": "vite preview",
+    "preview:demo": "vite preview --port 4173"
   },
   "main": "index.js",
   "author": "",

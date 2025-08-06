@@ -8,13 +8,28 @@
 <h1>Chip Selector WebComponent Demo</h1>
 
 <!-- The chip-selector webcomponent -->
-<dzs-chip-selector id="chip-selector-demo"></dzs-chip-selector>
+<dzs-chip-selector id="chip-selector-demo"
+                   data-chip-selector-options='{"inputPlaceholderText":"ceva"}'
+                   data-persistentOptions='[{"htmlContent":"Apple ","value":"apple","currentStatus":"unchecked"},{"htmlContent":"Orange ","value":"orange","currentStatus":"checked"},{"htmlContent":"<span>Apricot</span> ","value":"apricot","currentStatus":"unchecked"}]'
+>
+  <link data-lazy-href="node_modules/chip-selector/dist/style/dzs-chip-selector.css" rel="stylesheet"/>
+  <link rel="stylesheet" data-lazy-href="node_modules/chip-selector/dist/style/skins/skin-default.css"/>
+</dzs-chip-selector>
 
 <!-- Import the chip-selector styles -->
-<link href="node_modules/chip-selector/dist/style/dzs-chip-selector.css" rel="stylesheet"/>
+
+<!-- Import the webcomponent script -->
+<script type="module" src="node_modules/chip-selector/dist/dzsChipSelectorWebComponents.js" onload="initWebComponent();"></script>
 
 <!-- Import the TypeScript initialization file -->
 <script type="module" src="/src/demo-webcomponent.ts"></script>
 
+<script>
+
+  const initWebComponent = ()=>{
+
+    window.dzsChipSelectorWebComponent_init();
+  };
+</script>
 </body>
-</html> 
+</html>

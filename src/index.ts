@@ -1,37 +1,11 @@
 import {ChipSelectorOptions, DzsChipSelector, ChipSelectorItem} from 'chip-selector';
+import {persistentOptions} from "./demo-config";
 
 // Initialize the chip-selector with options
 const chipSelectorElement = document.querySelector('#chip-selector-demo') as HTMLElement;
 
 if (chipSelectorElement) {
   // Create persistent options (pre-defined chips)
-  const persistentOptions: ChipSelectorItem[] = [
-    {
-      htmlContent: 'JavaScript',
-      value: 'js',
-      currentStatus: 'unchecked'
-    },
-    {
-      htmlContent: 'TypeScript',
-      value: 'ts',
-      currentStatus: 'unchecked'
-    },
-    {
-      htmlContent: 'React',
-      value: 'react',
-      currentStatus: 'unchecked'
-    },
-    {
-      htmlContent: 'Vue',
-      value: 'vue',
-      currentStatus: 'unchecked'
-    },
-    {
-      htmlContent: 'Angular',
-      value: 'angular',
-      currentStatus: 'unchecked'
-    }
-  ];
 
   console.log('persistentOptions-  ', persistentOptions);
   // Configuration options for the chip selector
