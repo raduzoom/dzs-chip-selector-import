@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "serve public",
     "build-tsc": "tsc",
     "dev": "vite",
     "dev:demo": "vite --port 5174",
@@ -19,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chip-selector": "1.0.49"
+    "chip-selector": "1.0.57"
   },
   "devDependencies": {
     "serve": "^14.2.0",
